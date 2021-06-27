@@ -22,6 +22,6 @@ $secret = 'AdrielPegadorDeTodas';
 <body>
     <h1>Resgistre sua autenticação de 2 fatores com o GoogleAuthenticator</h1>
     <a href="autenticador.php">Inserir o token</a>
-    <img src="<?php echo $g->getUrl('NoteSec', 'teste-2fa-google-php.herokuapp.com', $secret)?>" alt="Qr Code" />
+    <img src="<?php echo $g->getUrl('teste-2fa-google-php', 'teste-2fa-google-php.herokuapp.com', $secret)?>" alt="Qr Code" />
 </body>
 </html>
