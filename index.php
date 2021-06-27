@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
 //Criando QR Code para ler com o app
 include_once('vendor/sonata-project/google-authenticator/src/FixedBitNotation.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticatorInterface.php');
