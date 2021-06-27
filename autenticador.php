@@ -13,8 +13,7 @@ $secret = 'AdrielPegadorDeTodas';
 //Validar o Token enviado
 if(isset($_POST['token'])){
     $token = $_POST['token'];
-    var_dump($token);
-    var_dump($secret);
+    var_dump($g);
     if($g->checkCode($secret, $token)){
         //true
         echo 'Autenticação concluida com sucesso';
