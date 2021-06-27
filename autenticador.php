@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 //Criando o form para conferir se o Token de 6 digitos está correto
 include_once('vendor/sonata-project/google-authenticator/src/FixedBitNotation.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticatorInterface.php');
