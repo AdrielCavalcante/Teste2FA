@@ -12,7 +12,6 @@ $secret = 'AdrielPegadorDeTodas';
 
 //Validar o Token enviado
 if(isset($_POST['token'])){
-    $token = "";
     $token = $_POST['token'];
     if($g->checkCode($secret, $token)){
         //true
@@ -36,7 +35,7 @@ if(isset($_POST['token'])){
 <body>
     <h1>Informe o Token de autenticação 2FA</h1>
     <form method="post">
-        <input type="number" name="token" />
+        <input type="text" name="token" />
         <button type="submit">Autenticar</button>
     </form>
 </body>
