@@ -13,6 +13,8 @@ $secret = 'AdrielPegadorDeTodas';
 //Validar o Token enviado
 if(isset($_POST['token'])){
     $token = $_POST['token'];
+    var_dump($token);
+    var_dump($secret);
     if($g->checkCode($secret, $token)){
         //true
         echo 'Autenticação concluida com sucesso';
@@ -20,7 +22,6 @@ if(isset($_POST['token'])){
         //false
         echo 'Token inválido ou expirado';
     }
-    var_dump($g->checkCode($secret, $token));
     die(); //Só pra n iniciar o form dnv
 }
 ?>
