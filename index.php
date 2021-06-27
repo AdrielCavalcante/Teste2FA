@@ -1,9 +1,9 @@
 <?php
 //Criando QR Code para ler com o app
-include_once('../vendor/sonata-project/google-authenticator/src/FixedBitNotation.php');
-include_once('../vendor/sonata-project/google-authenticator/src/GoogleAuthenticatorInterface.php');
-include_once('../vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
-include_once('../vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
+include_once('vendor/sonata-project/google-authenticator/src/FixedBitNotation.php');
+include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticatorInterface.php');
+include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
+include_once('vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
 
 $g = new \Google\Authenticator\GoogleAuthenticator();
 
