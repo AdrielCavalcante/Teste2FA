@@ -12,6 +12,7 @@ $secret = 'AdrielPegadorDeTodas';
 
 //Validar o Token enviado
 if(isset($_POST['token'])){
+    $token = "";
     $token = $_POST['token'];
     if($g->checkCode($secret, $token)){
         //true
