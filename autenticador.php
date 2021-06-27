@@ -15,6 +15,10 @@ $secret = 'AdrielPegadorDeTodas';
 if(isset($_POST['token'])){
     $token = $_POST['token'];
     var_dump($g);
+    echo "<br>";
+
+    echo $token ."<br>". $g->getCode($secret);
+    echo "<br>";
     if($g->checkCode($secret, $token)){
         //true
         echo 'Autenticação concluida com sucesso';
