@@ -20,6 +20,7 @@ if(isset($_POST['token'])){
         //false
         echo 'Token inválido ou expirado';
     }
+    var_dump($g->checkCode($secret, $token));
     die(); //Só pra n iniciar o form dnv
 }
 ?>
