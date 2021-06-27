@@ -6,7 +6,7 @@ include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
 
-$g = new \Google\Authenticator\GoogleAuthenticator();
+$g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
 //Criar chave secret
 $secret = 'AdrielPegadorDeTodas';
@@ -28,7 +28,7 @@ $secret = 'AdrielPegadorDeTodas';
 </html>
 
 <?php
-$g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
+
 $secreto = $g->generateSecret();
 echo "Get a new Secret: $secreto \n";
 echo "The QR Code for this secret (to scan with the Google Authenticator App: \n";
