@@ -25,7 +25,6 @@ echo "Check if your token is valid: ";
     } else {
         echo "NOOOOOOOOOO \n";
         }
-die();//Só pra n iniciar o form dnv
 ?>
 
 <!DOCTYPE html>
