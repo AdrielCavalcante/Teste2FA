@@ -20,11 +20,13 @@ echo "\n";
 
 
 echo "Check if your token is valid: ";
+if(isset($_POST['btn'])){
     if ($g->checkCode($secret, $_POST['token'])) {
         echo "YESSSSSSSSS \n";
     } else {
         echo "NOOOOOOOOOO \n";
         }
+}
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +39,9 @@ echo "Check if your token is valid: ";
 </head>
 <body>
     <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'NoteSec'); ?>" alt="">
-    <form action="" method="post">
+    <form method="post">
         <input type="number" name="token">
-        <button type="submit">Enviar</button>
+        <button type="submit" name="btn">Enviar</button>
     </form>
 </body>
 </html>
