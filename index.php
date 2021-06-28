@@ -24,9 +24,20 @@ echo "Check if your token is valid: ";
 echo "Get a new Secret: $secret \n";
 echo "The QR Code for this secret (to scan with the Google Authenticator App: \n";
 
-echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('chregu', $secret, 'GoogleAuthenticatorExample');
 echo "\n";
-die(); //Só pra n iniciar o form dnv
+
+//Só pra n iniciar o form dnv
 ?>
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('chregu', $secret, 'GoogleAuthenticatorExample'); ?>" alt="">
+</body>
+</html>
