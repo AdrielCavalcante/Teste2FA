@@ -36,7 +36,7 @@ echo "Check if your token is valid: ";
     <title>Document</title>
 </head>
 <body>
-    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'SafeProc'); ?>" alt="">
+    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'NoteSec'); ?>" alt="">
     <form action="" method="post">
         <input type="number" name="token">
         <button type="submit">Enviar</button>
