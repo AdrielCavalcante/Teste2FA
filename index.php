@@ -16,14 +16,11 @@ echo $g->getCode($secret);
 echo "\n";
 
 echo "Check if your token is valid: ";
-if(isset($_POST['token'])){
-    $token = $_POST['token'];
-    if ($g->checkCode($secret, $token)) {
+    if ($g->checkCode($secret, $code)) {
         echo "YES \n";
     } else {
         echo "NO \n";
         }
-}
 echo "Get a new Secret: $secret \n";
 echo "The QR Code for this secret (to scan with the Google Authenticator App: \n";
 
