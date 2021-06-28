@@ -5,12 +5,13 @@ include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
 
-$secret = 'XVQ2UIGO75XRUKJO';
+$secret = 'XVQ2UIGO75XRUKJO'; //Senha q vou mudar
 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
+/* Mostra o token(6 digitos)
 echo 'Current Code is: ';
-echo $g->getCode($secret);
+echo $g->getCode($secret); */
 
 echo "\n";
 
@@ -22,9 +23,9 @@ echo "\n";
 echo "Check if your token is valid: ";
 if(isset($_POST['btn'])){
     if ($g->checkCode($secret, $_POST['token'])) {
-        echo "YESSSSSSSSS \n";
+        echo "Acesso permitido \n";
     } else {
-        echo "NOOOOOOOOOO \n";
+        echo "Acesso negado \n";
         }
 }
 ?>
@@ -38,9 +39,9 @@ if(isset($_POST['btn'])){
     <title>Teste2FA</title>
 </head>
 <body>
-    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'SafeProc'); ?>" alt="">
+    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('SafeProc', $secret, 'NoteSec'); ?>" alt="">
     <form method="post">
-        <input type="number" name="token">
+        <input type="number" name="token" placeholder="000000">
         <button type="submit" name="btn">Enviar</button>
     </form>
 </body>
