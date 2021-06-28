@@ -30,15 +30,15 @@ if(isset($_POST['btn'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste2FA</title>
 </head>
 <body>
-    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'NoteSec'); ?>" alt="">
+    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('NoteSec', $secret, 'SafeProc'); ?>" alt="">
     <form method="post">
         <input type="number" name="token">
         <button type="submit" name="btn">Enviar</button>
