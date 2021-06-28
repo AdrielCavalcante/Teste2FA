@@ -24,7 +24,7 @@ echo "Check if your token is valid: ";
 echo "Get a new Secret: $secret \n";
 echo "The QR Code for this secret (to scan with the Google Authenticator App: \n";
 
-echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('', $secret, 'NoteSec');
+echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('chregu', $secret, 'GoogleAuthenticatorExample');
 echo "\n";
 die(); //Só pra n iniciar o form dnv
 ?>
