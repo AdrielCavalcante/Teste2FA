@@ -1,15 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoogleAuth</title>
+</head>
+<body>
+    <h1>Informe o Token de autenticação 2FA</h1>
+    <form method="post">
+        <img src="<?php echo $g->getUrl('', 'teste-2fa-google-php.herokuapp.com', $secret)?>" alt="Qr Code" />
+        <input type="number" name="token" />
+        <button type="submit">Autenticar</button>
+    </form>
+</body>
+</html>
+
 <?php
-
-declare(strict_types=1);
-
-/*
- * This file is part of the Sonata Project package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 include_once('vendor/sonata-project/google-authenticator/src/FixedBitNotation.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticatorInterface.php');
@@ -35,28 +42,12 @@ if(isset($_POST['token'])){
         echo "NO \n";
         }
 }
-$secret = $g->generateSecret();
 echo "Get a new Secret: $secret \n";
 echo "The QR Code for this secret (to scan with the Google Authenticator App: \n";
 
-echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('chregu', $secret, 'GoogleAuthenticatorExample');
+echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('', $secret, 'NoteSec');
 echo "\n";
 die(); //Só pra n iniciar o form dnv
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoogleAuth</title>
-</head>
-<body>
-    <h1>Informe o Token de autenticação 2FA</h1>
-    <form method="post">
-        <input type="number" name="token" />
-        <button type="submit">Autenticar</button>
-    </form>
-</body>
-</html>
+
