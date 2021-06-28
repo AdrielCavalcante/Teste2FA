@@ -38,6 +38,6 @@ echo "\n";
     <title>Document</title>
 </head>
 <body>
-    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('chregu', $secret, 'GoogleAuthenticatorExample'); ?>" alt="">
+    <img src="<?php echo \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('', $secret, 'GoogleAuthenticatorExample'); ?>" alt="">
 </body>
 </html>
