@@ -5,7 +5,7 @@ include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
 
-$secret = 'IFSHE2LFNRBWC5TBNRRWC3TUMU======'; //Senha q vou mudar
+$secret = 'IFSHE2LFNRBWC5TBNRRWC3TUMU======'; //Base32 de algo único do usuário
 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
