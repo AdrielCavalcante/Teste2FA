@@ -5,7 +5,7 @@ include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator
 include_once('vendor/sonata-project/google-authenticator/src/GoogleAuthenticator.php');
 include_once('vendor/sonata-project/google-authenticator/src/GoogleQrUrl.php');
 
-$secret = 'd6b186e03b2471062ddce1df5ddf8c6e7da75d5d938de09ae8444552aef03f49'; //Senha q vou mudar
+$secret = '2466d26c1457faf705e804d7c7c18e20'; //Senha q vou mudar
 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
