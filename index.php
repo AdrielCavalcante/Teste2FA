@@ -9,9 +9,9 @@ $secret = 'c54b5f849a6f1e944fd6f3ebf4ada2f8798b3d58998f3a0162a8ca11b0519e0a85a1f
 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
-/* Mostra o token(6 digitos)
+ Mostra o token(6 digitos)
 echo 'Current Code is: ';
-echo $g->getCode($secret); */
+echo $g->getCode($secret); 
 
 echo "\n";
 
