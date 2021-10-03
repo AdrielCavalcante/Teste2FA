@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Sonata\\GoogleAuthenticator\\' => array($vendorDir . '/sonata-project/google-authenticator/src'),
+    'ParagonIE\\ConstantTime\\' => array($vendorDir . '/paragonie/constant_time_encoding/src'),
     'Google\\Authenticator\\' => array($vendorDir . '/sonata-project/google-authenticator/src'),
 );

@@ -11,6 +11,10 @@ class ComposerStaticInit2fd85189b5a62bb6ca74b8e78e636283
         array (
             'Sonata\\GoogleAuthenticator\\' => 27,
         ),
+        'P' => 
+        array (
+            'ParagonIE\\ConstantTime\\' => 23,
+        ),
         'G' => 
         array (
             'Google\\Authenticator\\' => 21,
@@ -21,6 +25,10 @@ class ComposerStaticInit2fd85189b5a62bb6ca74b8e78e636283
         'Sonata\\GoogleAuthenticator\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/google-authenticator/src',
+        ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
         'Google\\Authenticator\\' => 
         array (

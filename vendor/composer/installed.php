@@ -20,6 +20,15 @@
       ),
       'reference' => NULL,
     ),
+    'paragonie/constant_time_encoding' => 
+    array (
+      'pretty_version' => 'v2.4.0',
+      'version' => '2.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c',
+    ),
     'sonata-project/google-authenticator' => 
     array (
       'pretty_version' => '2.3.1',
